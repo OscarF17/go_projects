@@ -1,0 +1,7 @@
+FROM postgres:latest
+
+WORKDIR /app
+
+COPY tienda.sql /app
+
+EXPOSE 8080:5432
